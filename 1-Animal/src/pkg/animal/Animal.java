@@ -9,18 +9,18 @@ public class Animal {
     private String ojos;
     private String boca;
     private String extremidades;
+     private String raza;
     private int edad;
-    private int tipo;
 
-    public int getTipo() {
-        return tipo;
+    public String getRaza() {
+        return raza;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setRaza(String raza) {
+        this.raza = raza;
     }
+
     
-
     public String getExtremidades() {
         return extremidades;
     }
@@ -37,9 +37,10 @@ public class Animal {
         this.edad = edad;
     }
 
-    public Animal(String ojos, String boca) {
+    public Animal(String ojos, String boca,String raza) {
         this.ojos = ojos;
         this.boca = boca;
+        this.raza=raza;
     }
 
     public String getOjos() {
